@@ -1,6 +1,6 @@
 import React from "react";
-import { useClima } from "../contexts/ClimaContexto";
-import { useUnidad } from "../contexts/UnidadContexto";
+import { useClima } from "../../contexts/ClimaContexto";
+import { useUnidad } from "../../contexts/UnidadContexto";
 
 function TarjetaClima() {
   const { climaActual } = useClima();

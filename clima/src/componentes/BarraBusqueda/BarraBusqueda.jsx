@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { useClima } from "../contexts/ClimaContexto";
-import { useUnidad } from "../contexts/UnidadContexto";
+import { useClima } from "../../contexts/ClimaContexto";
+import { useUnidad } from "../../contexts/UnidadContexto";
 
 const API_KEY = "7c17bdf5e8359ccaf2568d591bb04201";
 
