@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import BarraBusqueda from "../componentes/BarraBusqueda/BarraBusqueda";
-import TarjetaClima from "../componentes/TarjetaClima";
-import PronosticoHoras from "../componentes/PronosticoHoras";
-import Pronostico5Dias from "../componentes/Pronostico5Dias";
-import OtrasCiudades from "../componentes/OtrasCiudades";
+import TarjetaClima from "../componentes/TarjetaClima/TarjetaClima";
+import PronosticoHoras from "../componentes/PronosticoHoras/PronosticoHoras";
+import Pronostico5Dias from "../componentes/Pronostico5Dias/Pronostico5Dias";
+import OtrasCiudades from "../componentes/OtrasCiudades/OtrasCiudades";
 
 import { useTema } from "../contexts/TemaContexto";
 
@@ -18,17 +18,11 @@ function Inicio() {
 
       <OtrasCiudades />
 
-      {/* 👇 La barra de búsqueda actualiza la ciudad */}
       <BarraBusqueda onBuscar={setCiudad} />
 
-      {/* 👇 Se renderiza solo si hay ciudad */}
-      {ciudad && (
-        <>
           <TarjetaClima ciudad={ciudad} />
           <PronosticoHoras ciudad={ciudad} />
           <Pronostico5Dias ciudad={ciudad} />
-        </>
-      )}
     </div>
   );
 }

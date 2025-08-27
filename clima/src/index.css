@@ -28,7 +28,7 @@ body {
   --color-texto: #222;
   --color-boton: #0077ff;
   --color-boton-texto: white;
-  --color-tarjeta: rgba(255, 255, 255, 0.85); /* semi-transparente */
+  --color-tarjeta: rgba(112, 95, 95, 0.85);
   --sombra: rgba(0, 0, 0, 0.2);
 }
 
